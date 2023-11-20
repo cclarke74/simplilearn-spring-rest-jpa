@@ -2,10 +2,26 @@
 
 
 body {
-	padding: 20px 50px;
-	font-size: 1.1em;
+    padding: 20px 50px;
+    font-size: 1.1em
 }
 
 li {
-	font-size: 1.2em;
+    font-size: 1.2em
+}
+
+table, th, td {
+    padding: 10px;
+    text-align: left;
+    border: solid 1px #888;
+    border-collapse: collapse;
+    margin-left: 20px;
+}
+
+table.user, table.user th, table.user td {
+    border: none;
+}
+
+table.errorpage td {
+    vertical-align: top;
 }
