@@ -36,5 +36,13 @@ public class UserController {
 		
 		return new ModelAndView("list", "users", users);
 	}
+	
+	@GetMapping("/create")
+	String showCreate(User user) {
+		
+		logger.debug("Showing Create...");
+		
+		return "create";
+	}
 }
 
