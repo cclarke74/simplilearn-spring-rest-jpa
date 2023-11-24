@@ -25,3 +25,8 @@ table.user, table.user th, table.user td {
 table.errorpage td {
     vertical-align: top;
 }
+
+span.error-message {
+	color: red;
+	
+}
