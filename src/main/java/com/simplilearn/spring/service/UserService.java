@@ -2,6 +2,8 @@ package com.simplilearn.spring.service;
 
 import java.util.List;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -29,8 +31,20 @@ public class UserService {
 	}
 	
 	public User findUser(User user) {
-		
 		return this.userDao.findUser(user);
+	}
+	public User findUser(int idUser) {
+		return this.userDao.findUser(idUser);
+	}
+	
+	public void updateUser(User user) {
+		this.validateUser(user);
+		this.userDao.updateUser(user);
+		
+	}
+	
+	public void deleteUser(int idUser) {
+		this.userDao.deleteUser(idUser);
 	}
 	
 	private void validateUser(User user) {
