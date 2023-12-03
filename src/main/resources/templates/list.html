@@ -9,22 +9,20 @@
   <div th:replace="~{fragments :: header}"></div>
   <br>
   <h2>User List</h2>
-  <table>
-	  <thead>
-	    <tr>
-	      <th>Id</th>
-	      <th>Name</th>
-	      <th>Username</th>
-	      <th>Birth</th>
-	      <th>Status</th>
-	      <th>#</th>
-	      <th>#</th>
-	    </tr> 
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Birth</th>
+        <th>Status</th>
+        <th>#</th>
+        <th>#</th>
+      </tr>
     </thead>
     <tbody>
-	  
-	</tbody>
-  
+    </tbody>
   </table>
   <div th:replace="~{fragments :: scripts}"></div>
   <script th:src="@{/js/list.js}"></script>
